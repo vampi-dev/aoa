@@ -1,0 +1,8 @@
+def k_smallest(numbers, k):
+    if k < 0 or k > len(numbers):
+        raise ValueError("k must be between 0 and the list length")
+    return sorted(numbers)[:k]
+
+
+if __name__ == "__main__":
+    print(k_smallest([4, 1, 9, 7, 2, 8], 3))
